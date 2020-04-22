@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+        <!-- documentation at http://getbootstrap.com/docs/4.0/, alternative themes at https://bootswatch.com/4-alpha/ -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet"/>
+
+        <link href="/static/styles.css" rel="stylesheet"/>
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+        <title>Health Calculator</title>
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light border">
+            <a class="navbar-brand" href="/"><span class="blue">Health Calculator</span></a>
+            <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+
+        <main class="container p-5">
+            <table>
+                <tr>
+                    <th>BMI</th>
+                    <th>BMR</th>
+                    <th>TDEE</th>
+                    <th>Calories needed</th>
+                </tr>
+                <tr>
+                    <td>{{ bmi }}</td>
+                    <td>{{ bmr }}</td>
+                    <td>{{ tdee }}</td>
+                    <td>{{ total_calories }}</td>
+                </tr>
+                <tr>
+                    <th>Risk Level</th>
+                    <th>Protein</th>
+                    <th>Carbohydrates</th>                    
+                    <th>Fat</th>                    
+                </tr>
+                <tr>
+                    <td>{{ risk }}</td>
+                    <td>{{ protein }}</td>
+                    <td>{{ carbs }}</td>
+                    <td>{{ fat }}</td>
+                </tr>
+            </table>
+        </main>
+
+    </body>
+
+</html>
