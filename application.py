@@ -50,7 +50,7 @@ def index():
         return redirect(url_for("stats"))
         
     else:
-        return render_template("layout.html")
+        return render_template("index.html")
         
 @app.route("/stats", methods=["GET", "POST"])
 def stats():
@@ -117,5 +117,5 @@ def stats():
                                 protein=protein, carbs=carbs, fat=fat)
                                 
     else:
-        return render_template("layout.html")
+        return render_template("index.html")
     
